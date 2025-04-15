@@ -1,6 +1,6 @@
-#A. Instalasi Laragon
+# A. Instalasi Laragon
 
-##1. Download Laragon
+## 1. Download Laragon
    
 Kunjungi: https://laragon.org/download/
 
@@ -10,17 +10,17 @@ Pilih versi Laragon Full (biasanya ada PHP, MySQL, Node.js, Composer, dll).
 
 Unduh dan install seperti biasa (Next → Next → Finish).
 
-##2. Setelah Install
+## 2. Setelah Install
 
-Jalankan Laragon.
+- Jalankan Laragon.
 
 ![Screenshot 2025-04-15 121716](https://github.com/user-attachments/assets/0a6d63e0-0d18-45dd-ab07-2be2d91de95f)
 
-Klik tombol Start All untuk menjalankan Apache/Nginx dan MySQL.
+- Klik tombol Start All untuk menjalankan Apache/Nginx dan MySQL.
 
 ---
 
-#B. Cek & Install Laravel Requirements
+# B. Cek & Install Laravel Requirements
 Laravel butuh beberapa hal agar bisa berjalan:
 
 
@@ -35,10 +35,10 @@ Catatan: Laragon Full sudah menyertakan PHP, Composer, dan MySQL. Tapi kamu bisa
 
 ---
 
-#C. Cara Instalasi Composer di Windows
+# C. Cara Instalasi Composer di Windows
 Sebenarnya Laragon versi Full sudah include Composer, tapi kalau kamu mau install atau update Composer secara manual, ini dia caranya:
 
-##1. Download Composer Installer
+## 1. Download Composer Installer
 
 - Buka: https://getcomposer.org/download/
 
@@ -47,7 +47,7 @@ Sebenarnya Laragon versi Full sudah include Composer, tapi kalau kamu mau instal
 
 - Klik Composer-Setup.exe (Windows Installer)
 
-##2. Jalankan Installer
+## 2. Jalankan Installer
 
 - Klik 2x Composer-Setup.exe
 
@@ -57,63 +57,63 @@ Sebenarnya Laragon versi Full sudah include Composer, tapi kalau kamu mau instal
 
 - Pilih Next → Next → Finish
 
-##3. Cek Apakah Composer Sudah Terinstall
+## 3. Cek Apakah Composer Sudah Terinstall
 
 Setelah selesai, buka Command Prompt (CMD) atau terminal, lalu ketik:
 
-'''bash
+```bash
 composer -V
-'''
+```
 
 Atau:
 
-'''bash
+```bash
 composer --version
-'''
+```
 
 Jika berhasil, akan muncul versi Composer seperti:
 
-'''yaml
+```yaml
 Composer version 2.6.5 2024-03-10 12:34:56
-'''
+```
 
 ---
 
-#D. Install Laravel
+# D. Install Laravel
 
-'''bash
+```bash
 composer create-project laravel/laravel nama-proyek
-'''
+```
 
 Atau jika ingin pakai versi tertentu:
 
-'''bash
+```bash
 composer create-project laravel/laravel:^10.0 nama-proyek
-'''
+```
 
 ---
 
-#E. Cara Menjalankan Laravel
+# E. Menjalankan Laravel
 
 Ada dua cara umum untuk menjalankan aplikasi Laravel:
 
-##1. Jalankan Secara Manual via Terminal (php artisan serve)
+## 1. Jalankan Secara Manual via Terminal (php artisan serve)
 
 Kamu bisa pakai command ini dari direktori project Laravel:
 
-'''bash
+```bash
 php artisan serve
-'''
+```
 
 Output-nya biasanya seperti ini:
 
-'''nginx
+```nginx
 Starting Laravel development server: http://127.0.0.1:8000
-'''
+```
 
 Buka browser dan akses: http://127.0.0.1:8000
 
-##2. Jalankan Otomatis via Laragon (Rekomendasi untuk Pengguna Laragon)
+## 2. Jalankan Otomatis via Laragon (Rekomendasi untuk Pengguna Laragon)
 
 Langkah:
 
@@ -124,8 +124,8 @@ C:\laragon\www\nama-project
 
 - Buka browser dan akses:
 
-'''arduino
+```arduino
 http://nama-project.test
-'''
+```
 
 Note: Laragon akan otomatis membuat virtual host .test jika kamu menaruh project di folder www.
